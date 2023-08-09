@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {#comentario de una sola linea#}
+    
+    {% comment %}
+    esto es un comentario 
+    multilineas 
+    {% endcomment%}
+    
+    <h1>Hola {{name}}</h1>
+    <h3>Categoria</h3>
+    <ul>
+        {% for categorias in categoria %}
+            {%if categorias == 'lola'%}
+                <li><b>{{ categorias }}</b></li>
+            {%else%}
+                <li>{{ categorias }}</li>
+            {%endif%}
+        {%endfor%} 
+    </ul>
+</body>
+</html>
