@@ -1,4 +1,42 @@
-h1{
-    font-size: 5rem;
-    color: #facada;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #86888b;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li {
+    padding: 20px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+footer{
+    background-color: #86888b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+
 }

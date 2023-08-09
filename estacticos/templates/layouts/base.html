@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    {% block styles %} {% endblock styles %}
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <H3>Julitomuxik</H3>
+            <li><a href="#">Herencia</a></li>
+            <li><a href="#">Ejemplo</a></li>
+            <li><a href="#">Otra</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    {% block scripts %} {% endblock scripts %}
+</body>
+</html>
