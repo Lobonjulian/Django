@@ -1,0 +1,109 @@
+/*variables Globales */
+:root{
+    --color-primario: #927FFB;
+    --color-secundario: #E0D9F3;
+    --color-titulo: #494554;
+    --color-texto: #324B4F;
+    --color-bg: #FAF8FF;
+    --font-tittle: 'Victorian';
+    --font-text: 'Baskerville';
+}
+/*estilos Globales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+
+h1,h2{
+    font-family: var(--font-tittle);
+    color: var(--color-titulo);
+}
+
+/* Menu de Navegacion */
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario);
+}
+nav img{
+    margin: 25px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--font-tittle);
+}
+nav ul li a:hover{
+    color: var(--color-bg);
+}
+/* contenedor */
+main{
+    background-color: var(--color-secundario);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+}
+
+.about{
+    display: flex;
+    padding: 20px;
+}
+.about-content{
+    width: 350px;
+    padding: 20px;
+}
+.fotos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+/* pie de pagina */
+footer {
+    width:100vw;
+    min-height: 150px;
+    background-color: var(--color-texto);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul {
+    list-style-type: none;
+}
+footer ul li a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+footer img{
+margin: 20px;
+}
+
+/* importacion de fuente externa */
+@font-face {
+    font-family: 'Victorian';
+    src: url('../fonts/Victorian.otf');
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url('../fonts/Baskerville.ttf');
+}
