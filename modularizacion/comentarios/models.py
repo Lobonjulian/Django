@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Name(models.Model):
+class Comment(models.Model):
 
     name = models.CharField(max_length=255, null=False)
     score = models.IntegerField(default=3)
