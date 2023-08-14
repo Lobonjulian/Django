@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <h3>Buscando elemento que contenga la frase indicada  </h3>
+    <ul>
+        {% for elm in yest %}
+        <li>{{ elm.name }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Buscando elemento cuyo id es menor o igual a 17 </h3>
+    <ul>
+        {% for elm in filter %}
+        <li>{{ elm.email }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>
+        <ul>
+            {% for orde in order %}
+            <li>
+                {{ orde.email }}
+            </li>
+            {% endfor %}
+        </ul>
+
+    </h3>
+
+    <h3>Obteniendo los 10 primeros elementos saltando los 5 primeros </h3>
+    <ul>
+        {% for offsers in offser %}
+        <li>{{ offsers.email }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Obteniendo los 11 primeros elementos</h3>
+    <ul>
+        {% for limit in limits %}
+        <li>{{ limit.name }} | {{ limit.email }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Buscando Autor por id </h3>
+    <p>({{author.email}})</p>
+
+    <h3>Buscando Autor por email especifico </h3>
+    <ul>
+        {% for elm in filtrado %}
+        <li>{{ elm.name }} | {{ elm.email }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Todos los Autores</h3>
+    <ul>
+        {% for author in authors %}
+        <li>{{author.name}}({{author.email}})</li>
+        {% endfor %}
+    </ul>
+    <h4> Total autores: {{author|length }} </h4>
+</body>
+</html>
