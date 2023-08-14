@@ -1,7 +1,15 @@
 from django.shortcuts import render
 from .models import Author, Entry
+from django.http import HttpResponse
 
-# Consulta en base de datos atrabes de objetos .
+def update(request):
+    author = Author.objects.get(id=1)
+    author.name = 'julian'
+    author.email = 'julian@example.com'
+    author.save()
+    return HttpResponse('Ruta para probar actualizar objetos')
+
+# Consulta en base de datos atraves de objetos .
 def queries(request):
     #obtener todos los elementos de un objeto
     authors = Author.objects.all()
