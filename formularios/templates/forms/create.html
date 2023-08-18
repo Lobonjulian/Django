@@ -1,0 +1,8 @@
+<form action="{% url 'postgoal' %}" method="POST">
+    <h3>Formulario de POST</h3>
+    {% comment %} # protecion que nos ofrece django {% endcomment %}
+    {% csrf_token %} 
+    <input type="text" name="info" placeholder="escribe algo...">    
+    <input type="submit" valor="enviar">
+
+</form>
