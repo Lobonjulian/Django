@@ -1,0 +1,35 @@
+/* variables Globales */
+:root {
+    --color-primary: #2ea3f2;
+    --color-secundary:#444;
+    --color-text: #666;
+    --font-main: Victorian;
+    --font-text: Libre;
+}
+/* Main setting */
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    color: var(--color-text);
+} 
+
+/* Fuentes externas */
+@font-face {
+    font-family: 'Victorian';
+    src: url(../fonts/Victorian.otf);
+}
+
+@font-face {
+    font-family: 'Libre';
+    src: url(../fonts/Libre.ttf);
+}
+/* end main setting */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+}
+/* layout setting */
+
+/* end layout setting */
