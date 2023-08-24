@@ -31,5 +31,124 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-main);
 }
 /* layout setting */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--color-primary);
+}
+nav ul {
+    list-style-type: none;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family: var(--color-primary);
+    padding: 10px;
+}
+nav ul li a:hover {
+    color: var(--color-text);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 50px;
+    justify-content:flex-start;
+    align-items: center;
+}
+.lista {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-text);
+    border-radius: 10px;
+    width: 50%;
+    list-style-type: none;
+}
+
+.lista li {
+    padding: 15px;
+    height: 100%;
+    border-bottom: 1px solid var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-detail {
+    background-color: var(--color-primary);
+    color:#fafafa;
+}
+.btn-detail:hover{
+    background-color: #fafafa;
+    color: var(--color-primary);
+}
+
+.btn-edit{
+    background-color: #e4f0a3 ;
+    color: #fafafa;
+}
+.btn-edit:hover{
+    background-color: #fafafa;
+    color: #e4f0a3;
+}
+
+.btn-delete{
+    background-color: #cf2626 ;
+    color: #fafafa ;
+}
+.btn-delete:hover{
+    background-color: #fafafa;
+    color: #cf2626;
+}
+
+.search{
+    margin: 20px;
+    width: 50%;
+}
+
+.search .bar{
+    padding: 5px;
+    width: 80%;
+}
+.btn-search{
+    width: 19%;
+    background-color: var(--color-primary);
+    color: #fafafa;
+    outline: none;
+    border: 0;
+    box-shadow: 0;
+    cursor: pointer;
+}
+.btn-search:hover{
+    background-color: #fafafa;
+    color: var(--color-primary);
+}
+
+.aux-btn{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px;
+}
+
+.aux-btn a {
+    padding-right: 10px;
+    text-decoration: none;
+}
+
 
 /* end layout setting */
