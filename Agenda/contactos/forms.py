@@ -4,4 +4,4 @@ from  .models import Contacto
 class ContactosForm(ModelForm):
     class Meta:
         model = Contacto
-        fields = '__all__'
+        exclude = ('date',)

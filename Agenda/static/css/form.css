@@ -1,0 +1,20 @@
+input{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--color-text);
+    padding: 5px;
+}
+.btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-send{
+    width: 80%;
+    background-color: var(--color-primary);
+    padding: 5px;
+    color: #fafafa;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+}

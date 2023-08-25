@@ -12,8 +12,8 @@
     {% for contacto in contactos %}
     <li>{{ contacto }}
         <span>
-            <a href="#" class="btn btn-detail">Ver</a>
-            <a href="#" class="btn btn-edit">Editar</a>
+            <a href="{% url 'contacto_view' id=contacto.id %}" class="btn btn-detail">Ver</a>
+            <a href="{% url 'contacto_edit' id=contacto.id %}" class="btn btn-edit">Editar</a>
             <a href="#" class="btn btn-delete">Eliminar</a>
         </span>
     </li>
