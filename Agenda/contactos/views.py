@@ -1,12 +1,16 @@
+from asyncio.windows_events import NULL
 from unicodedata import name
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Contacto
 from .forms import ContactosForm
 
-def index(request):
+def index(request, letter = NULL ):
+    if letter != NULL:
+        contactos = Contacto.objects.filter(name__istartswith=letter)
+    else:
     # nos da todos los valores que este si no existe nos lo da en blanco
-    contactos = Contacto.objects.filter(name__contains=request.GET.get('search', ''))
+        contactos = Contacto.objects.filter(name__contains=request.GET.get('search', ''))
     
     context = {
         'contactos': contactos
