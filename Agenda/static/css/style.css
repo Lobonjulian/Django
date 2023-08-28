@@ -157,5 +157,28 @@ main {
     color: #fafafa;
 }
 
-
 /* end layout setting */
+
+/* index setting */
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: var(--color-text);
+}
+/*end setting*/
